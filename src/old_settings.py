@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'sekharanbijumon@gmail.com'
+EMAIL_HOST_USER = 'bijuskhr@gmail.com'
 EMAIL_HOST_PASSWORD = 'xx'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
