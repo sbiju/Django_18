@@ -10,13 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 from django.conf import settings
-
+import os
 
 if not settings.DEBUG:
-    import os
+
 
     # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-    BASE_DIR = os.path.dirname( os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
     # Quick-start development settings - unsuitable for production
@@ -67,7 +67,7 @@ if not settings.DEBUG:
     ROOT_URLCONF = 'src.urls'
 
     TEMPLATES = [
-    {
+        {
             'BACKEND': 'django.template.backends.django.DjangoTemplates',
             'DIRS': [ os.path.join(BASE_DIR, 'templates')],
             'APP_DIRS': True,
@@ -88,16 +88,12 @@ if not settings.DEBUG:
     # Database
     # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-    #DATABASES = {
-       # 'default': {
-           # 'ENGINE': 'django.db.backends.postgresql',
-           # 'NAME': 'mydatabase',
-          #  'USER': 'mydatabaseuser',
-          #  'PASSWORD': 'mypassword',
-          #  'HOST': '127.0.0.1',
-         #   'PORT': '5432',
-       # }
-    #}
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
     # Password validation
