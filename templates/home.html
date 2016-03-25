@@ -4,37 +4,33 @@
 {% block head_title %}Welcome |{{ block.super }}{% endblock %}
 
 
-<style>
-    {% block style %}
-    .jumbotran{
-    background-color:#0E3D14;
-    color:#FFF;
-    }
-
-.navbar-static-top {
-    margin-bottom:0px !important;
-    }
-{% endblock %}
-</style>
-
-
 {% block jumbotran %}
 {% if not request.user.is_authenticated %}
 <div class="jumbotran">
 <div class="container">
      <div class="row">
      <div class="col-sm-6 text-justify">
-        <h1>KERALA</h1>
-        <p>Kerala , historically known as Keralam, is a state in South India on the Malabar coast. It was formed on 1 November 1956 following the States Reorganisation Act by combining Malayalam-speaking regions. Spread over 38,863 km2 (15,005 sq mi), it is bordered by Karnataka to the north and northeast, Tamil Nadu to the east and south, and the Lakshadweep Sea to the west. With 33,387,677 inhabitants as per the 2011 Census, Kerala is the thirteenth largest state by population and is divided into 14 districts with the capital being Thiruvananthapuram. Malayalam is the most widely spoken and the official language of the state.
-
-            The region was a prominent spice exporter since 3000 BCE. The Chera Dynasty was the first prominent kingdom based in Kerala, though it frequently struggled against attacks by the neighbouring Cholas and Pandyas. In the 15th century, the spice trade attracted Portuguese traders to Kerala, and paved the way for the European colonisation of India. After independence, Travancore and Cochin joined the Republic of India and Travancore-Cochin was given the status of a state in 1949. In 1956, Kerala state was formed by merging Malabar district, Travancore-Cochin (excluding four southern taluks), and the taluk of Kasargod, South Kanara.
-
-            Kerala has the lowest positive population growth rate in India; 3.44%, highest Human Development Index (HDI); 0.790 in 2011, the highest literacy rate; 93.91% in the 2011 census, the highest life expectancy; 77 years and the highest sex ratio; 1,084 women per 1000 men. The state has witnessed significant emigration, especially to the Gulf states during the Gulf Boom of the 1970s and early 1980s, and its economy depends significantly on remittances from a large Malayali expatriate community. Hinduism is practised by more than half of the population, followed by Islam and Christianity. The culture is a synthesis of Aryan and Dravidian cultures, developed over millennia, under influences from other parts of India and abroad.</p>
-
-         <a class="btn btn-lg btn-primary" href="" role="button">Join Us &raquo;</a>
+        <h1>പപ്പായ: മികച്ച പഴവും ഔഷധവും</h1>
+        <p>എല്ലാ സമയത്തും പഴം തരുന്ന പപ്പായ വീട്ടു വളപ്പിൽ കൃഷി ചെയ്യാനും വ്യാവസായികാടിസ്ഥാനത്തിൽ കൃഷി ചെയ്യാനും ഏറ്റവും
+            യോജിച്ച വിളയാണ്. കൊഴുപ്പും ഊർജവും കുറവായതിനാൽ പ്രമേഹം, ഹൃദ്‌രോഗം, രക്ത സമ്മർദ്ദം, കുടൽപ്പുണ്ണ്‍ തുടങ്ങിയ അസുഖമുള്ളവർക്കും
+            കഴിയ്ക്കാം. ഉഷ്ണമേഖലാ പ്രദേശത്താണ് പപ്പായ വളരുന്നത്. കപ്പളങ്ങ, കർമൂസ, ഓമയ്ക്കാ, കപ്പയ്ക്ക എന്നീ പലപേരുകളിലും
+            അറിയപ്പെടുന്ന പപ്പായ പോഷക മൂല്യങ്ങളുടെയും സ്വാദിന്റെയും കാര്യത്തിൽ ഒട്ടും പിന്നിലല്ല. ഇതിലടങ്ങിയിട്ടുള്ള ജീവകം റിബോഫ്‌ളാവിൻ,
+            അസ്‌കോർബിക്ക് ആസിഡ് എന്നിവയുടെ കാര്യത്തിൽ മാമ്പഴത്തിനെയും വാഴപ്പഴത്തിനെയും പിന്തള്ളും. ജീവകങ്ങൾ , ധാതുലവണങ്ങൾ
+            എന്നിവയാൽ സമ്പന്നമാണ് പപ്പായ. ചർമത്തിന്റെ ആരോഗ്യത്തിനും സൗന്ദര്യത്തിനും ആവശ്യമായ വൈറ്റമിൻ- എ പപ്പായയിൽ
+            സമൃദ്ധമായുണ്ട്. പപ്പായ നല്ലൊരു സൗന്ദര്യ വർധക വസ്തു കൂടിയാണ്. പഴുത്ത പപ്പായയുടെ മാംസളഭാഗം തൊലികളഞ്ഞ് ദിവസേന
+            മുഖത്ത് തേച്ച് അധികം ഉണങ്ങുന്നതിന് മുമ്പ് കഴുകിക്കളഞ്ഞാൽ ചർമ്മത്തിന് ശോഭയേറും. മലബന്ധം ശമിപ്പിക്കാനും ഉത്തമൗഷധമാണ് പപ്പായ.
+            പപ്പായയിലുള്ള പപ്പെയ്ൻ എന്ന രാസ വസ്തു പ്രോട്ടീന്‍ അധികമായ ഭക്ഷണത്തിന്റെ ദഹനം എളുപ്പമാക്കും. പപ്പായ കറയിലുള്ള ഈ
+            രാസാഗ്നിക്ക് ധാരാളം വ്യാവസായിക ഉപയോഗമുണ്ട്. സൗന്ദര്യ വർദ്ധക വസ്തുക്കൾ , ദന്തൽ പേസ്റ്റ് എന്നിവയുടെ നിർമ്മാണത്തിന്
+            ഇതുപയോഗിക്കുന്നു. ചിക്കുൻഗുനിയ വൈറസ് മൂലമുണ്ടാകുന്ന രോഗമാണ് ചിക്കുൻഗുനിയ. ഈരോഗം ബാധിച്ചവരുടെ രക്തത്തിൽ
+            പ്ളേറ്റ്‌ലറ്റുകളുടെ എണ്ണം ഗണ്യമായി കുറയും. പ്ളേറ്റ്‌ലറ്റുകളുടെ എണ്ണം കൂട്ടാൻ പപ്പായ ഇലയുടെ നീരാണ് ഡോക്ടർമാർ
+            പോലും നിർദ്ദേശിക്കുന്നത്. അടുത്തകാലത്താണ് പപ്പായയുടെ ഈ അമൂല്യമായ ഔഷധഗുണത്തെക്കുറിച്ച് ലോകം അറിയുന്നത്.
+            </p>
          </div>
          <div class="col-sm-6">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/lwimcFOkxjk" frameborder="0" allowfullscreen></iframe>
+             <br/>
+             <br/>
+             <br/>
+         <iframe width="550" height="350" src="https://www.youtube.com/embed/AGZeMjuE7J8" frameborder="0" allowfullscreen></iframe>
          </div>
         </div>
 </div>
@@ -65,25 +61,22 @@
     <input class="btn btn-primary" type="submit" value="Sign Up"/>
     </form>
 </div>
-</div>
-
-
 <div class="col-sm-3">
-    <p class="lead text-align-center">Django $ Bootstrap</p>
-     <img src="{% static 'img/marketing1.JPG' %}" class="img-responsive"/>
+    <p class="lead text-center">Pappaya</p>
+     <img src="{% static 'img/pappaya.jpeg' %}" class="img-responsive"/>
  </div>
-
 <div class="col-sm-3">
-    <p class="lead text-center">Opensource Always<br/>
+    <p class="lead text-center">Sugar Cane<br/>
     <br/>
-    <i class="fa fa-github fa-5x"></i>
+    <img src="{% static 'img/sugar-cane.jpg' %}" class="img-responsive"/>
     </p>
  </div>
  <div class="col-sm-3">
-    <p class="lead text-center">Created for starters<br/><br/>
-   <i class="fa fa-cog fa-spin fa-5x"></i>
+    <p class="lead text-center">Lakshmi-tharu<br/><br/>
+  <img src="{% static 'img/lakshmi-tharu.png' %}" class="img-responsive"/>
     </p>
  </div>
+    </div>
 
 {% endif %}
 
