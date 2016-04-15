@@ -10,7 +10,13 @@ body {
 
 .navbar-default .navbar-brand{
     color:#FFF;
+
 .navbar-default .navbar-brand:hover{
     color:#777;
+
+}
+.img-responsive {
+
+    max-width: 60;
 
 }

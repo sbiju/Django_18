@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import SignUp
+from .models import SignUp, Post
 
 from .forms import SignUpForm
 
@@ -13,3 +13,4 @@ class SignUpAdmin(admin.ModelAdmin):
     form = SignUpForm
 
 admin.site.register(SignUp, SignUpAdmin)
+admin.site.register(Post)

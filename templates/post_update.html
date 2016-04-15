@@ -1,14 +1,9 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
-
-<div class="col-sm-6 col-sm-offset-3">
 <form method="POST" action="">{% csrf_token %}
-
-{{ form|crispy }}
-
-<input class="btn btn-primary" type="submit" value="Contact Us"/>
+<h1>Form</h1>
+        {{ form|crispy }}
+<input type="submit" class="btn btn-primary" value= "Create Post"/>
 </form>
-
-</div>
 {% endblock %}
